@@ -12,17 +12,18 @@ Full-stack mini CRM for managing sales leads with JWT authentication, role-based
 
 ```text
 .
-├── backend/          # Express API and MongoDB models
-├── frontend/         # React + Vite app
-├── docs/             # API, architecture, and Render notes
-├── Dockerfile        # Production image for Render
-├── render.yaml       # Render Blueprint
-└── README.md
+|-- backend/          # Express API and MongoDB models
+|-- frontend/         # React + Vite app
+|-- docs/             # API, architecture, and Render notes
+|-- Dockerfile        # Production image for Render
+|-- render.yaml       # Render Blueprint
+|-- .env.example      # Placeholder environment variables
+`-- README.md
 ```
 
 ## Local Setup
 
-Create local `.env` files only on your machine. Do not commit them.
+Create local `.env` files only on your machine. Do not commit them. Use `.env.example` as the reference for required values.
 
 Backend `backend/.env`:
 
@@ -35,7 +36,7 @@ JWT_EXPIRES_IN=7d
 CLIENT_ORIGIN=http://localhost:5173
 ADMIN_NAME=Admin User
 ADMIN_EMAIL=admin@example.com
-ADMIN_PASSWORD=AdminPass123
+ADMIN_PASSWORD=change-this-local-admin-password
 ```
 
 Frontend `frontend/.env`:
